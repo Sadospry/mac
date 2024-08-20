@@ -1,0 +1,16 @@
+nano mac.sh
+
+#!/bin/bash
+
+read -p "Are you sure you want to execute this? (yes or no): " response
+
+# Check the user's response
+if [[ "$response" == "yes" ]]; then
+    echo "Executed."
+elif [[ "$response" == "no" ]]; then
+    echo "Cancelled."
+else
+    echo "Invalid response. Please enter 'yes' or 'no'."
+fi
+
+chmod +x my_curl_script.sh
